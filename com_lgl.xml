@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+    <name>com_lgl</name>
+    <author>Murat Erkenov</author>
+    <creationDate>[CREATION_DATE]</creationDate>
+    <copyright>(C)2014 Murat Erkenov. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>murat@11bits.net</authorEmail>
+    <authorUrl>11bits.net</authorUrl>
+    <version>[VERSION]</version>
+    <description>
+LaoGoaL Core component provides basic libraries and functionality for all LaoGoaL extensions
+    </description>
+    <files folder="site">
+        <folder>cmd</folder>
+        <folder>controllers</folder>
+        <folder>lib</folder>
+        <filename>lgl.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <media folder="media" destination="com_lgl">
+        <folder>js</folder>
+    </media>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.com_lgl_teams_fullname.ini</language>
+        <language tag="en-GB">en-GB/en-GB.com_lgl_teams.ini</language>
+        <language tag="en-GB">en-GB/en-GB.com_lgl.ini</language>
+    </languages>
+    <config>
+        <fields>
+	    <fieldset name="lgl_settings" label="LGL_SETTINGS_LABEL" description="LGL_SETTINGS_DESC">
+	        <field name="provider" type="text" label="LGL_PROVIDER_LABEL" description="LGL_PROVIDER_DESC" default="[PROVIDER]" />
+	        <field name="apikey" type="text" label="LGL_APIKEY_LABEL" description="LGL_APIKEY_DESC" default="[APIKEY]"/>
+            <field name="listener" type="text" label="LGL_LISTENER_LABEL" description="LGL_LISTENER_DESC" default="[LISTENER]"/>
+	    </fieldset>
+        </fields>
+    </config>
+    <install folder="admin">
+        <sql>
+            <file driver="mysql" charset="utf8">sql/leagues.sql</file>
+            <file driver="mysql" charset="utf8">sql/matches.sql</file>
+            <file driver="mysql" charset="utf8">sql/standings.sql</file>
+        </sql>
+    </install>
+    <administration>
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>media</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>data</folder>
+            <folder>sql</folder>
+            <filename>lgl.php</filename>
+            <filename>config.xml</filename>
+            <filename>index.html</filename>
+            <filename>controller.php</filename>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_lgl.sys.ini</language>
+        </languages>
+    </administration>
+    <scriptfile>installscript.php</scriptfile>
+    <updateservers>
+        <server type="extension" name="LaoGoaL Core Component Updates">[UPDATE_SERVER]</server>
+    </updateservers>
+
+</extension>

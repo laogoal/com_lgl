@@ -1,0 +1,76 @@
+.lgl-install-placeholder {
+	background-color: #fff;
+	font-family: monospace;
+	color: #222;
+	width: 550px;
+	margin: auto;
+	padding: 5px;
+	font-size: 10px;
+}
+
+.lgl-install-placeholder li {
+	width:100%;
+	margin-bottom: 3px;
+	min-height: 12px;
+	line-height: 12px;
+}
+
+.lgl-install-placeholder li[data-status='default'] {
+	display: none;
+}
+
+.lgl-install-placeholder li.visible {
+	display: list-item;
+}
+
+.lgl-install-placeholder li[data-status='complete'] > span {
+	color: green;
+}
+.lgl-install-placeholder li[data-status='failed'] > span {
+	color: red;
+}
+.lgl-install-placeholder li[data-status='progress'] > span {
+	color: #4bb1cf;
+}
+
+
+.lgl-install-placeholder li .err-msg {
+	white-space: normal;
+	margin-top: 3px;
+	display: none;
+}
+
+.lgl-install-placeholder li span {
+	float: right;
+}
+.lgl-admin .blaim, .lgl-admin .congrat {
+	line-height: 14px;
+	padding: 5px;
+}
+
+.lgl-admin .blaim {
+	border: 1px dashed red;
+}
+
+.lgl-installer-tip {
+	white-space: normal;
+	color: #000;
+	z-index: 13000;
+	background: #f18d92;
+	padding: 4px 8px 8px;
+}
+
+
+.lgl-admin table {
+	width: 100%;
+}
+
+.lgl-admin table td {
+	height: 20px;
+	border-bottom: 1px solid #eee;
+}
+.lgl-admin table thead td {
+	font-size: 1.1em;
+	height: 24px;
+	font-weight: bold;
+}

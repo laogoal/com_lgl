@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fields>
+        <fieldset name="lgl_settings" label="COM_LGL_OPTIONS_TITLE" description="COM_LGL_OPTIONS_DESC">
+            <field name="provider" type="text" label="COM_LGL_OPTIONS_PROVIDER_LABEL"
+                   description="COM_LGL_OPTIONS_PROVIDER_DESC" />
+            <field name="apikey" type="text" label="COM_LGL_OPTIONS_APIKEY_LABEL"
+                   description="COM_LGL_OPTIONS_APIKEY_DESC" />
+            <field name="listener" type="text" label="COM_LGL_OPTIONS_LISTENER_LABEL"
+                   description="COM_LGL_OPTIONS_LISTENER_DESC" />
+
+            <field disabled="disabled" name="initialized" type="checkbox" label="COM_LGL_OPTIONS_IS_INITIALIZED_LABEL"
+                   description="COM_LGL_OPTIONS_IS_INITIALIZED_DESC" />
+
+            <field disabled="disabled" name="updates_enabled" type="checkbox"
+                   label="COM_LGL_OPTIONS_UPDATES_ENABLED_LABEL"
+                   description="COM_LGL_OPTIONS_UPDATES_ENABLED_DESC" />
+        </fieldset>
+    </fields>
+</config>
