@@ -1,3 +1,12 @@
+<?php
+/**
+ * @package LaoGoaL Core component for Joomla 3
+ * @author Murat Erkenov (murat@11bits.net)
+ * @copyright (C) 2015 - Murat Erkenov
+ * @license     GNU General Public License version 2 or later; see license.txt
+ **/
+defined( '_JEXEC' ) or die( 'Restricted access' );
+?>
 <fieldset>
 	<legend>LaoGoaL Core component is not initialized on your site</legend>
 	<p>
